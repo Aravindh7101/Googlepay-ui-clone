@@ -1,15 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Google Pay</title>
 
-    <!-- main css link -->
-    <link rel="stylesheet" href="./assets/css/main.css">
-  </head>
-  <body>
-    <h1 class="text-red-600 font-bold">Tailwind css google pay</h1>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google Pay</title>
+
+  <!-- main css link -->
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body class="bg-gray-500 p-10">
+  <!-- gpay header -->
+  <section class="bg-gray-700 max-w-md mx-auto">
+    <header class="flex justify-between items-center px-2">
+      <div class="p-5 relative flex-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+          class="absolute bottom-5 text-white left-6">
+          <path fill="currentColor"
+            d="m19.485 20.154l-6.262-6.262q-.75.639-1.725.989t-1.96.35q-2.402 0-4.066-1.663T3.808 9.503T5.47 5.436t4.064-1.667t4.068 1.664T15.269 9.5q0 1.042-.369 2.017t-.97 1.668l6.262 6.261zM9.538 14.23q1.99 0 3.361-1.37t1.37-3.361t-1.37-3.36t-3.36-1.37t-3.361 1.37t-1.37 3.36t1.37 3.36t3.36 1.37" />
+        </svg>
+        <input type="text" placeholder="Pay friends and Merchantas"
+          class="py-1.5 w-full space-x-7 outline-none px-10 rounded-full bg-gray-500 text-white" />
+      </div>
+      <div>
+        <img src="https://cdn.pixabay.com/photo/2023/03/31/14/20/leo-7890116_640.jpg" alt="leo"
+          class="h-10 w-10 rounded-full cursor-pointer" />
+      </div>
+    </header>
+    <!-- gpay banner -->
+    <div>
+      <img
+        src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202101/Screenshot_20210101_181956_1200x768.jpeg?size=1200:675"
+        alt="gpay banner" class="object-cover">
+    </div>
+    <!-- icons -->
+    <div class="my-4 text-white flex justify-between">
+      <div class="flex-col items-center px-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16" class="h-7">
+          <g fill="currentColor">
+            <path
+              d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5M.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5M4 4h1v1H4z" />
+            <path d="M7 2H2v5h5zM3 3h3v3H3zm2 8H4v1h1z" />
+            <path d="M7 9H2v5h5zm-4 1h3v3H3zm8-6h1v1h-1z" />
+            <path
+              d="M9 2h5v5H9zm1 1v3h3V3zM8 8v2h1v1H8v1h2v-2h1v2h1v-1h2v-1h-3V8zm2 2H9V9h1zm4 2h-1v1h-2v1h3zm-4 2v-1H8v1z" />
+            <path d="M12 9h2V8h-2z" />
+          </g>
+        </svg>
+        <span class="text-sm font-medium">Scan Qr</span>
+      </div>
+
+      <div class="flex-col items-center px-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="h-7">
+          <path fill="currentColor"
+            d="M4 2a1 1 0 0 0-1 1v2h2V4h14v16H5v-1H3v2a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm5 14a3 3 0 1 1 6 0zm3-4a2 2 0 1 1 0-4a2 2 0 0 1 0 4M6 9V7H2v2zm0 2v2H2v-2zm0 6v-2H2v2z" />
+        </svg>
+        <span class="text-sm font-medium">Conta..</span>
+      </div>
+
+      <div class="flex-col items-center px-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="h-7">
+          <path fill="currentColor"
+            d="M7 23q-.825 0-1.412-.587T5 21v-6h2v3h10V6H7v3H5V3q0-.825.588-1.412T7 1h10q.825 0 1.413.588T19 3v18q0 .825-.587 1.413T17 23zm0-3v1h10v-1zm3-4l-1.4-1.4l1.55-1.6H2v-2h8.15L8.6 9.4L10 8l4 4zM7 4h10V3H7zm0 0V3zm0 16v1z" />
+        </svg>
+        <span class="text-sm font-medium">Phone..</span>
+      </div>
+
+      <div class="flex-col items-center px-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="h-7">
+          <path fill="currentColor"
+            d="M2 20h20v2H2zm2-8h2v7H4zm5 0h2v7H9zm4 0h2v7h-2zm5 0h2v7h-2zM2 7l10-5l10 5v4H2zm2 1.236V9h16v-.764l-8-4zM12 8a1 1 0 1 1 0-2a1 1 0 0 1 0 2" />
+        </svg>
+        <span class="text-sm font-medium">Bank..</span>
+      </div>
+    </div>
+  </section>
+
+</body>
+
 </html>
